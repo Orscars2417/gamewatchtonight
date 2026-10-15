@@ -1,0 +1,58 @@
+:root{
+  --bg:#0d1117;--surface:#161b22;--surface2:#1c2330;--border:#2d333b;
+  --text:#e6edf3;--muted:#8b949e;--accent:#4f8ff7;--green:#3fb950;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Segoe UI",system-ui,-apple-system,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+a{color:var(--accent);text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{background:var(--surface);border-bottom:1px solid var(--border);padding:14px 0;position:sticky;top:0;z-index:10}
+header .wrap{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.logo{font-size:20px;font-weight:700;color:#fff}
+.logo span{color:var(--accent)}
+nav a{margin-left:16px;font-size:14px;color:var(--muted)}
+nav a:hover{color:var(--text)}
+.hero{padding:52px 0 30px;text-align:center}
+.hero h1{font-size:36px;font-weight:800;margin-bottom:10px}
+.hero p{color:var(--muted);font-size:17px}
+.search{margin:22px auto 0;max-width:560px;display:flex}
+.search input{flex:1;padding:13px 16px;border:1px solid var(--border);background:var(--surface);color:var(--text);border-radius:8px 0 0 8px;font-size:15px}
+.search button{padding:13px 24px;background:var(--accent);border:none;color:#fff;border-radius:0 8px 8px 0;font-size:15px;font-weight:600;cursor:pointer}
+.section{padding:30px 0}
+.section h2{font-size:21px;margin-bottom:16px}
+.badge{font-size:11px;font-weight:700;background:var(--accent);color:#fff;padding:2px 8px;border-radius:10px;vertical-align:middle}
+.league-tabs{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap}
+.league-tabs a{padding:6px 14px;border:1px solid var(--border);border-radius:20px;font-size:13px;color:var(--muted)}
+.league-tabs a.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:14px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px;transition:border-color .15s}
+.card:hover{border-color:var(--accent)}
+.card .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.league{font-size:12px;font-weight:700;color:var(--accent)}
+.time{font-size:12px;color:var(--muted)}
+.live{font-size:11px;font-weight:700;color:var(--green)}
+.matchup{font-size:17px;font-weight:700;margin-bottom:4px}
+.sub{font-size:13px;color:var(--muted);margin-bottom:12px}
+.watch{display:flex;gap:8px;flex-wrap:wrap}
+.watch span{font-size:12px;background:var(--surface2);border:1px solid var(--border);padding:4px 10px;border-radius:6px}
+.watch .free{border-color:var(--green);color:var(--green)}
+.cta{display:block;margin-top:12px;text-align:center;padding:9px;background:var(--accent);color:#fff;border-radius:8px;font-size:14px;font-weight:600}
+.cta:hover{filter:brightness(1.1)}
+article h1{font-size:30px;margin:24px 0 8px}
+article h2{font-size:20px;margin:26px 0 10px}
+article p{margin-bottom:12px;color:var(--text)}
+article .meta{color:var(--muted);font-size:14px;margin-bottom:20px}
+.toc{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px 20px;margin:20px 0}
+.toc b{display:block;margin-bottom:8px}
+.toc a{display:block;font-size:14px;padding:3px 0}
+.faq details{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:14px 18px;margin-bottom:10px}
+.faq summary{font-weight:600;cursor:pointer}
+.faq p{margin-top:10px;color:var(--muted);font-size:14px}
+.stream-table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+.stream-table th,.stream-table td{border:1px solid var(--border);padding:10px 12px;text-align:left}
+.stream-table th{background:var(--surface2)}
+.stream-table .yes{color:var(--green);font-weight:700}
+footer{border-top:1px solid var(--border);margin-top:48px;padding:26px 0;color:var(--muted);font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.disclosure{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px 16px;font-size:12px;color:var(--muted);margin-top:20px}
+@media(max-width:640px){nav a{margin-left:10px;font-size:13px}.hero h1{font-size:26px}}
